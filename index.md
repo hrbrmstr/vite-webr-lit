@@ -134,4 +134,6 @@ If you use VS Code or some other environment that groks "Vite", it'll start a de
 
 You can use `just build` to make the `dist/` directory, then put that anywhere you like.
 
+Oh, and the Pyodide support is in the sources on GH. Just uncomment out the obvious bits and you'll have that, too.
+
 Source is on [GitHub](https://github.com/hrbrmstr/vite-webr-lit)
