@@ -19,9 +19,13 @@ install-exmd:
 render:
 	@exmd index.md
 
+# compile the app
+build:
+  npm run build
+
 # sync to server
 rsync:
-  rsync -avp ./build/ {{syncDest}}
+  rsync -avp ./dist/ {{syncDest}}
 
 # publish to GH
 github:

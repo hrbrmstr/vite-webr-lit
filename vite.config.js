@@ -1,17 +1,25 @@
 import { defineConfig } from 'vite'
-// import importToCDN from 'vite-plugin-cdn-import'
+import topLevelAwait from "vite-plugin-top-level-await";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	base: '/w/vite-webr-lit/', // change me for your deployment
   build: {
-    lib: {
-      entry: 'src/main.js',
+		lib: {
+			entry: 'index.html',
+      // entry: 'src/main.js',
       formats: ['es'],
     },
     rollupOptions: {
-      external: /^lit/,
+      // external: /^lit/,
 		},
 	},
+	plugins: [
+		topLevelAwait({
+			promiseExportName: "__tla",
+			promiseImportName: i => `__tla_${i}`
+		})
+	],
 	server: {
 		headers: {
 		"Cache-Control": "no-cache; max-age=1",
