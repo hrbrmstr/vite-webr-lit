@@ -1,0 +1,27 @@
+{
+  "name": "vite-webr-lit",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/main.es.js",
+  "exports": {
+    ".": "./dist/main.es.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "lit": "^2.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "babel-loader": "^8.3.0",
+    "lit-html": "^2.7.0",
+    "vite": "^4.2.0",
+    "vite-plugin-cdn-import": "^0.3.5"
+  }
+}
