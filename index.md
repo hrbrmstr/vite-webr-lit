@@ -73,7 +73,6 @@ You can look in `button-with-raw-results.js` for the full code, but one other ad
 :host div.results-output {
   color: var(--results-color);
   font-family: var(--results-font-family);
-  color: var(--results-color);
 }
 ```
 
