@@ -20,8 +20,9 @@ render:
 	@exmd index.md
 
 # compile the app
+# change what's after `base` for your deployment
 build:
-  npm run build
+  npm run build -- --base /w/vite-webr-lit/ 
 
 # sync to server
 rsync:
